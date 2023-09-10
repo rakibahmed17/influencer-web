@@ -75,13 +75,34 @@ background-position: bottom;
  justify-content: center;
  align-items: center;
  gap: 3rem;
- margin-top: 2rem;
- height: 30vh;
+ margin-top: 5rem;
+ height:60vh;
 
  
 }
 .sponsor-container img{
-  width: 20%;
+  width: 90%;
 
+}
+/* resposive with mobile device */
+
+@media screen and (max-width:576px) {
+                  nav, .influencer-container,
+                  .sponsor-container{
+                  flex-direction: column;
+                  padding: 0;
+                  margin: 0;
+                  }
+                  
+}
+@media screen and (min-width:576px) and (max-width:960px)
+ {
+                  nav, .influencer-container,
+                  .sponsor-container{
+                  flex-direction: column;
+                  padding: 3rm;
+                  margin: 3rm;
+                  }            
+                  
 }
 
