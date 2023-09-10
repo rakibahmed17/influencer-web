@@ -86,8 +86,9 @@ background-position: bottom;
 }
 .populur-title{
  text-align: center;
+ padding-top: 30px;
  margin-top: 50px;
- font-size: 24px;
+ font-size: 20px;
 }
 .img-container{
 display: grid;
@@ -114,6 +115,19 @@ margin-top: 20px;
  font-size: 24px;
  color: brown;
 }
+.feature-container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 30px;
+
+}
+.feature-content{
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
 
 
 
@@ -127,7 +141,8 @@ margin-top: 20px;
 
 @media screen and (max-width:576px) {
                   nav, .influencer-container,
-                  .sponsor-container{
+                  .sponsor-container,
+                  .feature-container{
                   flex-direction: column;
                   padding: 0;
                   margin: 0;
@@ -143,10 +158,11 @@ margin-top: 20px;
 @media screen and (min-width:576px) and (max-width:960px)
  {
                   nav, .influencer-container,
-                  .sponsor-container{
+                  .sponsor-container,
+                  .feature-container{
                   flex-direction: column-reverse;
                   padding: 3rm;
-                  margin: 3rm;
+                  margin: 3.5rm;
                   }  
                   .img-container{ 
                     grid-template-columns: repeat(2,1fr);
